@@ -1,0 +1,177 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Welcome to Qwerty’s documentation! &#8212; Qwerty 0.1.0 documentation</title>
+    
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body role="document">
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="welcome-to-qwerty-s-documentation">
+<h1>Welcome to Qwerty&#8217;s documentation!<a class="headerlink" href="#welcome-to-qwerty-s-documentation" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound">
+</div>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#8217;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
+
+<span class="n">guesses_made</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="n">name</span> <span class="o">=</span> <span class="nb">raw_input</span><span class="p">(</span><span class="s1">&#39;Hello! What is your name?</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+
+<span class="n">number</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">20</span><span class="p">)</span>
+<span class="k">print</span> <span class="s1">&#39;Well, {0}, I am thinking of a number between 1 and 20.&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+
+<span class="k">while</span> <span class="n">guesses_made</span> <span class="o">&lt;</span> <span class="mi">6</span><span class="p">:</span>
+
+    <span class="n">guess</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">raw_input</span><span class="p">(</span><span class="s1">&#39;Take a guess: &#39;</span><span class="p">))</span>
+
+    <span class="n">guesses_made</span> <span class="o">+=</span> <span class="mi">1</span>
+
+    <span class="k">if</span> <span class="n">guess</span> <span class="o">&lt;</span> <span class="n">number</span><span class="p">:</span>
+        <span class="k">print</span> <span class="s1">&#39;Your guess is too low.&#39;</span>
+
+    <span class="k">if</span> <span class="n">guess</span> <span class="o">&gt;</span> <span class="n">number</span><span class="p">:</span>
+        <span class="k">print</span> <span class="s1">&#39;Your guess is too high.&#39;</span>
+
+    <span class="k">if</span> <span class="n">guess</span> <span class="o">==</span> <span class="n">number</span><span class="p">:</span>
+        <span class="k">break</span>
+
+<span class="k">if</span> <span class="n">guess</span> <span class="o">==</span> <span class="n">number</span><span class="p">:</span>
+    <span class="k">print</span> <span class="s1">&#39;Good job, {0}! You guessed my number in {1} guesses!&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">guesses_made</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="k">print</span> <span class="s1">&#39;Nope. The number I was thinking of was {0}&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">number</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>CategoryDocumentation</p>
+</div>
+<div class="section" id="text-1">
+<h1>Text 1<a class="headerlink" href="#text-1" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="line-1">
+<h2>line 1<a class="headerlink" href="#line-1" title="Permalink to this headline">¶</a></h2>
+<p>War and Peace (pre-reform Russian: Война́ и миръ; post-reform Russian: Война́ и мир, translit. Voyná i mir [vɐjˈna i ˈmʲir]) is a novel by the Russian author Leo Tolstoy, which is regarded as a central work of world literature and one of Tolstoy&#8217;s finest literary achievements.[1][2][3]</p>
+</div>
+<div class="section" id="line-2">
+<h2>line 2<a class="headerlink" href="#line-2" title="Permalink to this headline">¶</a></h2>
+<p>The novel chronicles the history of the French invasion of Russia and the impact of the Napoleonic era on Tsarist society through the stories of five Russian aristocratic families. Portions of an earlier version, titled The Year 1805,[4] were serialized in The Russian Messenger from 1865 to 1867. The novel was first published in its entirety in 1869.[5] Newsweek in 2009 ranked it first in its Top 100 Books.[6] In 2007, Time magazine ranked War and Peace third in its poll of the 10 greatest books of all time while Anna Karenina was ranked first.[7]</p>
+</div>
+<div class="section" id="line-3">
+<h2>line 3<a class="headerlink" href="#line-3" title="Permalink to this headline">¶</a></h2>
+<p>Tolstoy said War and Peace is &#8220;not a novel, even less is it a poem, and still less a historical chronicle&#8221;. Large sections, especially the later chapters, are a philosophical discussion rather than narrative.[8] Tolstoy also said that the best Russian literature does not conform to standards and hence hesitated to call War and Peace a novel. Instead, he regarded Anna Karenina as his first true novel. According to the Encyclopædia Britannica, &#8220;no single English novel attains the universality of Leo Tolstoy&#8217;s War and Peace.</p>
+</div>
+</div>
+<div class="section" id="text-2">
+<h1>Text 2<a class="headerlink" href="#text-2" title="Permalink to this headline">¶</a></h1>
+<p>War and Peace is perhaps best known as one of the longest novels ever written.[citation needed]</p>
+<p>Tolstoy began writing War and Peace in the year that he finally married and settled down at his country estate. The first half of the book was written under the name &#8220;1805&#8221;. During the writing of the second half, he read widely and acknowledged Schopenhauer as one of his main inspirations. However, Tolstoy developed his own views of history and the role of the individual within it.[10]</p>
+<p>The first draft of the novel was completed in 1863. In 1865, the periodical Russkiy Vestnik (The Russian Messenger) published the first part of this draft under the title 1805 and published more the following year. Tolstoy was dissatisfied with this version, although he allowed several parts of it to be published with a different ending in 1867. He heavily rewrote the entire novel between 1866 and 1869.[5][10] Tolstoy&#8217;s wife, Sophia Tolstaya, copied as many as seven separate complete manuscripts before Tolstoy considered it again ready for publication.[10] The version that was published in Russkiy Vestnik had a very different ending from the version eventually published under the title War and Peace in 1869. Russians who had read the serialized version were anxious to buy the complete novel, and it sold out almost immediately. The novel was translated almost immediately after publication into many other languages.[citation needed]</p>
+<p>It is unknown why Tolstoy changed the name to War and Peace. He may have borrowed the title from the 1861 work of Pierre-Joseph Proudhon: La Guerre et la Paix (&#8220;The War and the Peace&#8221; in French).[4] The title may also be another reference to Titus, described as being a master of &#8220;war and peace&#8221; in The Twelve Caesars, written by Suetonius in 119 CE. The completed novel was then called Voyna i mir (Война и мир in new-style orthography; in English War and Peace).[citation needed]</p>
+<p>The 1805 manuscript was re-edited and annotated in Russia in 1983 and since has been translated into English, German, French, Spanish, Dutch, Swedish, Finnish, Albanian, Korean, and Czech. The existence of so many versions make this work one of the best insights into the mental processes of a great novelist.[citation needed]</p>
+<p>Tolstoy was instrumental in bringing a new kind of consciousness to the novel. His narrative structure is noted for its &#8220;god-like&#8221; ability to hover over and within events, but also in the way it swiftly and seamlessly portrayed a particular character&#8217;s point of view. His use of visual detail is often cinematic in scope, using the literary equivalents of panning, wide shots and close-ups. These devices, while not exclusive to Tolstoy, are part of the new style of the novel that arose in the mid-19th century and of which Tolstoy proved himself a master.[11]</p>
+<p>The standard Russian text of War and Peace is divided into four books (comprising fifteen parts) and an epilogue in two parts. Roughly the first half is concerned strictly with the fictional characters, whereas the latter parts, as well as the second part of the epilogue, increasingly consist of essays about the nature of war, power, history, and historiography. Tolstoy interspersed these essays into the story in a way that defies previous fictional convention. Certain abridged versions remove these essays entirely, while others, published even during Tolstoy&#8217;s life, simply moved these essays into an appendix.[citation needed]</p>
+</div>
+<div class="section" id="indices-and-tables">
+<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></li>
+<li><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></li>
+<li><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></li>
+</ul>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="#">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Welcome to Qwerty&#8217;s documentation!</a></li>
+<li><a class="reference internal" href="#text-1">Text 1</a><ul>
+<li><a class="reference internal" href="#line-1">line 1</a></li>
+<li><a class="reference internal" href="#line-2">line 2</a></li>
+<li><a class="reference internal" href="#line-3">line 3</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#text-2">Text 2</a></li>
+<li><a class="reference internal" href="#indices-and-tables">Indices and tables</a></li>
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="#">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/index.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2017, Akhil.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.5.5</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.10</a>
+      
+      |
+      <a href="_sources/index.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
